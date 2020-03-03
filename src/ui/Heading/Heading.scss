@@ -1,0 +1,21 @@
+.heading {
+    &--type {
+        &-h1 {
+            @include type-heading-h1();
+            // color: $color-green-primary;
+        }
+        &-h2 {
+            @include type-heading-h2();
+            margin-bottom: 20px;
+            color: $color-green-primary;
+        }
+        &-h3 {
+            @include type-heading-h3();
+            color: $color-yellow-primary;
+        }
+        &-h4 {
+            @include type-heading-h4();
+            // color: $color-yellow-primary;
+        }
+    }
+}

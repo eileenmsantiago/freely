@@ -1,0 +1,20 @@
+@mixin link {
+    padding: 1%;
+    margin: -1%;
+    color: $color-grey;
+
+    &:active {
+        color: $color-green-primary;
+        font-weight: 500;
+        border-bottom: 1.5px solid $color-green-primary;
+        text-decoration: none;
+    }
+
+    &:hover {
+        transition: all 0.1s ease 0s;
+        color: $color-green-primary;
+        font-weight: 500;
+        border-bottom: 1.5px solid $color-green-primary;
+        text-decoration: none;
+    }
+}

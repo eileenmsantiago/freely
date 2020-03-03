@@ -1,0 +1,38 @@
+.body-text {
+
+    &--size {
+        &-sm {
+            @include type-body-sm();
+        }
+        &-md {
+            @include type-body-md();
+        }
+        &-lg {
+            @include type-body-lg();
+        }
+    }
+
+    &--weight {
+        &-bold {
+            font-weight: 900;
+        }
+        &-medium {
+            font-weight: 500;
+        }
+        &-light {
+            font-weight: 300;
+        }
+    }
+
+    &--color {
+        &-green {
+            color:$color-green-primary;
+        }
+        &-yellow {
+            color:$color-yellow-primary;
+        }
+        &-grey {
+            color:$color-grey;
+        }
+    }
+}

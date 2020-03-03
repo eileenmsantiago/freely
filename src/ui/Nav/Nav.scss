@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+
+    &__text-link {
+        @include link() 
+    }
+
+    &-list {
+        text-decoration: none;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin: 1.5rem;
+        }
+        &--icons {
+            margin-left: auto;
+            margin-right: 2.5rem;
+        }
+    }
+}
+
+.nav-folder {
+    width: 100%;
+    height: 140px;
+    background: $color-peach;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}

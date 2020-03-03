@@ -1,0 +1,42 @@
+.dashboard {
+    &__wrapper {
+        display: flex;
+    }
+}
+
+.main-content {
+    flex-grow: 1;
+}
+.side-nav {
+    padding: 2rem;
+    width: 300px;
+    height: 100vh;
+    background-image: url('/assets/bckg-blob.png');
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: right 100px;
+
+    &__logo {
+        display: flex;
+        img {
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+    }
+}
+
+.main-folder {
+    padding: 2rem;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-top:-60px;
+    height: 100vh;
+    background-color: $color-white-grey;
+    box-shadow: 0px 0px 20px #EDEDED, 0px 0px 10px rgba(172, 172, 172, 0.25);
+}
+.overview__info-container {
+    text-align: center;
+    &:first-child {
+        border-right: 0.2px solid $color-grey-light;
+    }
+}
