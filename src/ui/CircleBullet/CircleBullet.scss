@@ -1,0 +1,22 @@
+.graph-legend__bullet {
+    &--color {
+        &-yellow {
+            color:$color-brand-yellow;
+        }
+        &-green {
+            color:$color-brand-green;
+        }
+        &-purple {
+            color:$color-brand-purple;
+        }
+        &-red {
+            color:$color-brand-red;
+        }
+        &-blue {
+            color:$color-brand-blue;
+        }
+        &-pink {
+            color:$color-brand-pink;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.graph-legend {
+    &__item {
+        display: flex;
+        justify-content: stretch;
+    }
+    &__bullet {
+        // background-color: grey;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 30%;
+        margin-right: 1rem;
+        margin-top: 0.3rem;
+
+        &--color {
+            &-yellow {
+                background-color: $color-brand-yellow;
+            }
+            &-green {
+                background-color: $color-brand-green;
+            }
+            &-purple {
+                background-color: $color-brand-purple;
+            }
+            &-red {
+                background-color: $color-brand-red;
+            }
+            &-blue {
+                background-color: $color-brand-blue;
+            }
+            &-pink {
+                background-color: $color-brand-pink;
+            }
+        }
+    }
+    &__text {
+        margin-right: 0.2rem;
+    }
+}

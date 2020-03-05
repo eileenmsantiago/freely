@@ -7,3 +7,10 @@ a {
 ul {
     margin-bottom: 0px;
 }
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

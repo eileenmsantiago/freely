@@ -12,7 +12,7 @@
 
 @mixin type-body-lg {
     @include type-body-base();
-    font-size: 20px;
+    font-size: 22px;
     line-height: 21px;
 }
 
@@ -43,10 +43,15 @@
 @mixin type-heading-h3 {
     @include type-heading-base();
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
 }
 @mixin type-heading-h4 {
     @include type-heading-base();
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+}
+@mixin type-heading-h5 {
+    @include type-heading-base();
+    font-weight: 600;
+    font-size: 18px;
 }

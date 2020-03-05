@@ -1,6 +1,7 @@
 .card {
-    margin-top: 3rem;
-    padding: 1rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0.8rem;
     background-color: #FAFAFA;
     width: 100%;
     border-radius: 25px;
@@ -9,5 +10,9 @@
     border-radius: 20px;
     &-money {
         text-align: right;
+        @media only screen and (max-width: 768px) {
+            text-align: left;
+        }
     }
+
 }

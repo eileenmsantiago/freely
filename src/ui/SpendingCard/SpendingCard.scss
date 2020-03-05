@@ -1,0 +1,20 @@
+.card-container {
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    height: 55x;
+    width: 100%;
+    &__icon {
+        justify-content: center;
+        margin: auto;
+        width: 60px;
+    }
+    &__description {
+        margin: auto;
+        flex-grow: 1;
+    }
+    &__details {
+        margin: auto;
+        width: 80px;
+        text-align: right;
+    }
+}

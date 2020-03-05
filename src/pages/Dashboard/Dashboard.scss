@@ -4,23 +4,48 @@
     }
 }
 
+a {
+    color: $color-green-primary;
+}
+
+@media only screen and (min-width: 600px) {
+    .top-logo {
+        display: none;
+    }
+}
+
 .main-content {
     flex-grow: 1;
 }
 .side-nav {
     padding: 2rem;
     width: 300px;
-    height: 100vh;
     background-image: url('/assets/bckg-blob.png');
     background-repeat: no-repeat;
-    background-size: 80% 80%;
+    background-size: 80% 700px;
     background-position: right 100px;
-
+    &__contents {
+        position: sticky;
+        top: 0;
+    }
     &__logo {
         display: flex;
+        position: sticky;
+        justify-content: center;
         img {
             margin: 0 auto;
             margin-top: 3rem;
+        }
+    }
+    &__cards {
+        margin-top: 4rem;
+    }
+    &__helper {
+        bottom: 1rem;
+        align-content: center;
+        &img {
+            width: 100%;
+            height: auto;
         }
     }
 }
@@ -30,13 +55,51 @@
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     margin-top:-60px;
-    height: 100vh;
+    min-height: 100%;
     background-color: $color-white-grey;
     box-shadow: 0px 0px 20px #EDEDED, 0px 0px 10px rgba(172, 172, 172, 0.25);
 }
 .overview__info-container {
+    padding-left: 3rem;
     text-align: center;
     &:first-child {
         border-right: 0.2px solid $color-grey-light;
     }
+    @media only screen and (max-width: 768px) {
+        padding-left: 0rem;
+        padding-bottom: 1.5rem;
+        &:first-child {
+            border-right: none;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        padding-left: 0rem;
+    }
+}
+
+.options {
+    margin-left: auto;
+    text-align: right;
+    &__text-link {
+        @include link() 
+    }
+}
+
+.categories {
+    img {
+        width: 100%;
+    }
+    &__donut {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-logo {
+        margin: auto;
+    }
+    .side-nav {
+        display: none;
+    }
+
 }
